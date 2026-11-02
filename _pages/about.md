@@ -44,13 +44,35 @@ redirect_from:
 
 ## Building CyberNeuro
 
-At UNC-Chapel Hill I build **CyberNeuro**, a web platform where researchers describe a neuroimaging study in plain language and an LLM agent plans, runs, and checks the analysis, while patient data stays on the lab's own infrastructure. Built on the open-source OpenCode agent engine, it brings together:
+Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. At UNC ACMLab I build **CyberNeuro**, an AI agent platform that lets researchers run these analyses in natural language.
 
-- **Multi-user workspace**: a platform gateway and web app with per-user accounts, file browsing, and a live terminal over a persistent SSH connection.
-- **HPC execution**: agents submit and monitor Slurm jobs on UNC's Longleaf cluster over SSH/SFTP, with tools packaged as version-pinned containers.
-- **58 neuroimaging skills**: FreeSurfer, FSL, ANTs, MRtrix3, TractSeg, NiBabies, SPM-style pipelines, quality control, and statistics, each packaged as an agent skill.
-- **Interactive visualization**: a visualization runtime routes every result to the right viewer, from 3D cortical surfaces (PyVista) and diffusion glyphs (FURY) to voxel QC (FSLeyes) and manual mask editing (Freeview).
-- **One-image deployment**: the whole stack ships as a single Docker image with pinned toolchains and checksum-verified model weights, so other labs can run it too.
+<div class="steps">
+  <div class="step">
+    <span class="step__num">1</span>
+    <h3 class="step__title">Ask</h3>
+    <p class="step__body">Describe the analysis you need in natural language.</p>
+  </div>
+  <div class="step">
+    <span class="step__num">2</span>
+    <h3 class="step__title">Pick a Skill</h3>
+    <p class="step__body">The agent selects the matching Skill: an instruction document plus an Apptainer SIF container image.</p>
+  </div>
+  <div class="step">
+    <span class="step__num">3</span>
+    <h3 class="step__title">Run on the cluster</h3>
+    <p class="step__body">The agent writes a Slurm job and submits it to the cluster's CPU/GPU nodes.</p>
+  </div>
+  <div class="step">
+    <span class="step__num">4</span>
+    <h3 class="step__title">Review</h3>
+    <p class="step__body">Results become interactive pages that open in the visualization panel.</p>
+  </div>
+</div>
+
+- **Web app**: built with SolidJS, with a chat interface, a file browser, and a visualization panel. Skills show up as pills in the input box and can also be chosen by hand.
+- **58 Skills**: structural preprocessing, DICOM-to-BIDS conversion, structural MRI quality control, white-matter normative scoring, DTI and tractography, functional connectivity, and statistics and paper figures.
+- **Visualization routing**: the agent sends each output to the right tool by file type. NIfTI volumes open in a slice viewer, FreeSurfer surfaces in PyVista 3D, fiber tracts in FURY/TrackVis, and connectivity matrices as network graphs.
+- **Example: 5-step structural MRI QC**. From raw images through skull stripping, registration, and tissue segmentation to cortical surfaces, each step produces a review page. Researchers mark every subject pass or fail and can fix brain masks by hand in the browser; once the decisions are exported, the agent repairs or reruns the failed cases.
 
 <a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>&nbsp;&nbsp;&nbsp;<a class="chevron-link" href="/portfolio/01-cyberneuro/">Project details</a>
 

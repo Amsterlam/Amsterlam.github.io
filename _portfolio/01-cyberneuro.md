@@ -1,24 +1,28 @@
 ---
-title: "CyberNeuro: Agentic Platform for Neuroimaging Analysis"
-excerpt: "Research & engineering · UNC-Chapel Hill, Guorong Wu's group<br/>A multi-user web platform where an LLM agent plans, runs, and checks cohort-scale neuroimaging analysis on HPC while patient data stays on-premise."
+title: "CyberNeuro: AI Agent Platform for Neuroimaging Research"
+excerpt: "Research & engineering · UNC ACMLab, Guorong Wu's group<br/>An AI agent platform that lets researchers run neuroimaging analyses in natural language, from Skill selection to Slurm jobs to interactive review."
 collection: portfolio
 ---
 
-**Group:** Prof. Guorong Wu, UNC-Chapel Hill · **Related paper:** [CyberNeuro (arXiv:2607.28841)](/publication/2026-cyberneuro)
+**Lab:** UNC ACMLab, Prof. Guorong Wu · **Related paper:** [CyberNeuro (arXiv:2607.28841)](/publication/2026-cyberneuro)
 
-CyberNeuro lets researchers describe a neuroimaging study in plain language and have an LLM agent plan, execute, and quality-check the analysis, without patient data leaving the lab's own infrastructure. I build and maintain the platform, which is based on the open-source OpenCode agent engine.
+Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. We built a platform that lets researchers run these analyses in natural language.
+
+## How it works
+
+A researcher describes what they need in natural language → the agent selects the matching Skill, where each Skill is an instruction document plus a container image (Apptainer SIF) → the agent generates a Slurm job and submits it to the cluster's CPU/GPU nodes → the results are rendered as interactive pages that open in the visualization panel for review.
 
 ## Platform
 
-- **Multi-user workspace**: a platform gateway and web app with per-user accounts, file browsing over SFTP, and a live terminal on a persistent, pinned-host SSH connection (passwords are never stored).
-- **HPC execution**: an HPC provider connects each workspace to UNC's Longleaf cluster, so agents can submit, monitor, and collect Slurm jobs; tools run as version-pinned containers on the compute nodes.
-- **Skill system**: 58 neuroimaging, statistics, and visualization skills (FreeSurfer, FSL, ANTs, MRtrix3, TractSeg, NiBabies, SPM-style pipelines, MRIQC-style QC, harmonization, and more), each packaged as an agent skill with its own instructions.
-- **Visualization runtime**: a fail-closed visualization controller routes each output to the right viewer based on file type and intent: 3D cortical surfaces and stat maps (PyVista), diffusion glyphs and fibers (FURY), voxel QC (FSLeyes), manual mask editing (Freeview), atlas plots (ggseg), and connectivity graphs (Gephi).
-- **One-image deployment**: the full stack, including the web UI, server, neuroimaging toolchains, and checksum-verified model weights, builds into a single immutable Docker image, so other labs can deploy it with Docker alone.
+- **Frontend**: a SolidJS web app with a chat interface, a file browser, and a visualization panel. Skills appear as pills in the input box and can also be selected manually.
+- **Skill coverage**: 58 Skills spanning structural preprocessing, DICOM-to-BIDS conversion, structural MRI quality control, white-matter normative scoring, DTI and tractography, functional connectivity, and statistics and paper figures.
+- **Visualization**: the agent routes each output to a tool by file type. NIfTI volumes go to a slice viewer, FreeSurfer surfaces to PyVista 3D, fiber tracts to FURY/TrackVis, and connectivity matrices to network graphs.
+
+## Case study: 5-step structural MRI QC
+
+From raw images through skull stripping, registration, and tissue segmentation to cortical surfaces, every step produces a review page. Researchers mark each subject as pass or fail, one by one, and can fix the brain mask by hand right in the browser. Once the decisions are exported, the agent goes on to repair or rerun the failed cases.
 
 ## Research
 
-- Investigated how LLM agents can automate cohort-scale neuroimaging analysis (metadata curation, pipeline execution, quality control) for labs with limited staff and compute.
-- Co-designed a multi-agent framework (Planner, Validator, Dispatcher, Reporter) where an LLM plans workflows over registered skills and validators gate every tool call.
-- Built a human-in-the-loop co-visualization panel for quality control, enabling researchers to inspect volumes and edit masks to verify and correct agent outputs.
+- Co-designed a multi-agent framework (Planner, Validator, Dispatcher, Reporter) where an LLM plans workflows over registered skills and validators gate every tool call, keeping patient data on-premise.
 - With a locally hosted 7B model, raised held-out tool-use accuracy from 40.3% to 69.4% over the base model, and completed a 10-cohort workflow suite with ~10.6% of the per-volume tokens of the NeuroClaw baseline.
