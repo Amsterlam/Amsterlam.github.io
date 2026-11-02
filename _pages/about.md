@@ -10,7 +10,6 @@ redirect_from:
 
 <section class="hero">
   <p class="hero__eyebrow">Research Assistant · UNC-Chapel Hill</p>
-  <h1 class="hero__title">Trustworthy LLM agents <br>for science and health.</h1>
   <p class="hero__lead">I'm <strong>Junhong Tong</strong>, a Research Assistant at the <strong>University of North Carolina at Chapel Hill</strong>, working with Prof. Guorong Wu. I study <strong>neuroimaging</strong>, <strong>LLM agents</strong>, and <strong>coding theory</strong>, building systems that are useful, verifiable, and private by design.</p>
   <div class="hero__actions">
     <a class="pill" href="/publications/">View publications</a>
