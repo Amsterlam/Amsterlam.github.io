@@ -39,7 +39,6 @@ Research Experience
   * The agent maps each request to one of 58 Skills (an instruction document plus an Apptainer SIF image) covering structural preprocessing, DICOM-to-BIDS, structural MRI QC, white-matter normative scoring, DTI/tractography, functional connectivity, and statistics and paper figures, then generates and submits Slurm jobs to CPU/GPU nodes.
   * SolidJS web app with chat, file browser, and visualization panel; Skills appear as pills in the input box. Outputs are routed by file type: NIfTI to a slice viewer, FreeSurfer surfaces to PyVista 3D, fiber tracts to FURY/TrackVis, connectivity matrices to network graphs.
   * 5-step structural MRI QC workflow (raw image, skull stripping, registration, tissue segmentation, cortical surface) with per-subject pass/fail review pages and in-browser brain-mask editing; exported decisions drive the agent's repair or rerun.
-  * Co-designed a multi-agent framework (Planner, Validator, Dispatcher, Reporter); with a locally hosted 7B model, raised held-out tool-use accuracy from 40.3% to 69.4%, using ~10.6% of the per-volume tokens of the NeuroClaw baseline.
 * **Text-Preserving Lossy Text Compression** — supervised by Jun Li
   * Token-deletion strategies (WordFreq, entropy-based, hybrid) with QLoRA-fine-tuned Llama-3.2-3B reconstruction, competitive with Gemini 2.0 Flash.
 
