@@ -15,7 +15,7 @@ redirect_from:
     <a class="pill" href="/publications/">View publications</a>
     <a class="pill pill--secondary" href="/cv/">Curriculum vitae</a>
     <a class="chevron-link" href="https://scholar.google.com/citations?user=tomozbsAAAAJ&hl=en">Google Scholar</a>
-    <a class="chevron-link" href="mailto:junhong.tong16@qmail.cuny.edu">Get in touch</a>
+    <a class="chevron-link" href="mailto:junhong.tong16@cuny.edu">Get in touch</a>
   </div>
 </section>
 
