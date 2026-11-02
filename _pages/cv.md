@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<a class="pill" href="{{ base_path }}/files/cv.pdf">Download PDF</a>
+
 Education
 ======
 * **M.S. in Computer Science**, Queens College, City University of New York (CUNY), USA — 2026
