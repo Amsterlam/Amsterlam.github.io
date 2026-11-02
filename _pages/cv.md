@@ -21,7 +21,7 @@ Experience
 
 Research Interests
 ======
-LLM Agents, Coding Theory, Machine Learning, Healthcare, Neuroimaging, Natural Language Processing, Distributed Computing, Large Language Models, Computer Vision, Trustworthy AI.
+Healthcare, Machine Learning, Neuroimaging, Coding Theory, Natural Language Processing, LLM.
 
 Publications
 ======

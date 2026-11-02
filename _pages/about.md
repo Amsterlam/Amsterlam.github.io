@@ -11,7 +11,7 @@ redirect_from:
 <section class="hero">
   <p class="hero__eyebrow">Research Assistant · UNC-Chapel Hill</p>
   <h1 class="hero__title">Trustworthy LLM agents <br>for science and health.</h1>
-  <p class="hero__lead">I'm <strong>Junhong Tong</strong>, a Research Assistant at the <strong>University of North Carolina at Chapel Hill</strong>, working with Prof. Guorong Wu. I study <strong>LLM agents</strong>, <strong>coding theory</strong>, and <strong>AI for neuroimaging</strong>, building systems that are useful, verifiable, and private by design.</p>
+  <p class="hero__lead">I'm <strong>Junhong Tong</strong>, a Research Assistant at the <strong>University of North Carolina at Chapel Hill</strong>, working with Prof. Guorong Wu. I study <strong>neuroimaging</strong>, <strong>LLM agents</strong>, and <strong>coding theory</strong>, building systems that are useful, verifiable, and private by design.</p>
   <div class="hero__actions">
     <a class="pill" href="/publications/">View publications</a>
     <a class="pill pill--secondary" href="/cv/">Curriculum vitae</a>
@@ -49,19 +49,16 @@ At UNC-Chapel Hill I work in Prof. Guorong Wu's group on agentic workbenches for
 <ul class="news">
   <li><span class="news__date">2026</span><span>Our paper <em>Text-Preserving Lossy Text Compression: A Study of Strategic Deletion and LLM Reconstruction</em> is accepted to <strong>AACL-IJCNLP 2026</strong>.</span></li>
   <li><span class="news__date">2026</span><span><em>CyberNeuro</em>, a privacy-preserving agentic workbench for neuroimage and clinical data analysis, is released on <a href="https://arxiv.org/abs/2607.28841">arXiv</a>.</span></li>
-  <li><span class="news__date">2026</span><span><em>NeuroPilot</em> is accepted to the <strong>World Models for High-Stakes Health (WMHS 2026)</strong> workshop.</span></li>
+  <li><span class="news__date">2026</span><span><em>NeuroPilot</em> is accepted to the <strong>NeurIPS 2026</strong> Workshop on World Models for High-Stakes Health (WMHS).</span></li>
 </ul>
 
 ## Research interests
 
 <ul class="tags">
-  <li>LLM Agents</li>
-  <li>Coding Theory</li>
-  <li>Machine Learning</li>
   <li>Healthcare</li>
+  <li>Machine Learning</li>
   <li>Neuroimaging</li>
+  <li>Coding Theory</li>
   <li>Natural Language Processing</li>
-  <li>Distributed Computing</li>
-  <li>Computer Vision</li>
-  <li>Trustworthy AI</li>
+  <li>LLM</li>
 </ul>
