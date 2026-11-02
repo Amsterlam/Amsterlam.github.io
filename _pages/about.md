@@ -42,7 +42,7 @@ redirect_from:
   </div>
 </div>
 
-At UNC-Chapel Hill I work in Prof. Guorong Wu's group on agentic workbenches for neuroimaging, and I continue to collaborate with Prof. Jun Li at Queens College on LLMs and coding theory. I received my M.S. in Computer Science from Queens College, City University of New York (2026), and my B.Eng. in Electronic Engineering from South China Agricultural University, Zhujiang College.
+At UNC-Chapel Hill I build **CyberNeuro**, a privacy-preserving agentic workbench that lets LLM agents run cohort-scale neuroimaging and clinical data analysis while patient data stays on-premise. I co-designed its multi-agent framework (Planner, Validator, Dispatcher, Reporter), developed the execution layer that runs 58 neuroimaging and statistics tools such as FreeSurfer, fMRIPrep, and XCP-D as version-pinned containers on a Slurm cluster, and built the human-in-the-loop co-visualization panel for quality control. <a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>
 
 ## News
 
