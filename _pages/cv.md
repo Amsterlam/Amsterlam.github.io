@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 * **M.S. in Computer Science**, Queens College, City University of New York (CUNY), USA — 2026
-* **B.Eng. in Electronic Engineering**, South China Agricultural University, Zhujiang College, China — 09/2019 – 06/2023
+* **B.Eng. in Electronic Engineering**, South China Agricultural University  
+  China — 09/2019 – 06/2023
 
 Experience
 ======
