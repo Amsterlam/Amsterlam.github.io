@@ -11,8 +11,13 @@ redirect_from:
 
 Education
 ======
-* **M.S. in Computer Science**, Queens College, City University of New York (CUNY), USA — expected 06/2026
+* **M.S. in Computer Science**, Queens College, City University of New York (CUNY), USA — 2026
 * **B.Eng. in Electronic Engineering**, South China Agricultural University, Zhujiang College, China — 09/2019 – 06/2023
+
+Experience
+======
+* **Research Assistant**, University of North Carolina at Chapel Hill — present
+  * Prof. Guorong Wu's group: LLM agents for privacy-preserving, cohort-scale neuroimaging analysis.
 
 Research Interests
 ======

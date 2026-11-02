@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 <section class="hero">
-  <p class="hero__eyebrow">Computer Science · Queens College, CUNY</p>
-  <h1 class="hero__title">Trustworthy LLM agents<br>for science and health.</h1>
-  <p class="hero__lead">I'm <strong>Junhong Tong</strong>, a Master's student in Computer Science at Queens College, City University of New York. I study <strong>LLM agents</strong>, <strong>coding theory</strong>, and <strong>AI for neuroimaging</strong>, building systems that are useful, verifiable, and private by design.</p>
+  <p class="hero__eyebrow">Research Assistant · UNC-Chapel Hill</p>
+  <h1 class="hero__title">Trustworthy LLM agents <br>for science and health.</h1>
+  <p class="hero__lead">I'm <strong>Junhong Tong</strong>, a Research Assistant at the <strong>University of North Carolina at Chapel Hill</strong>, working with Prof. Guorong Wu. I study <strong>LLM agents</strong>, <strong>coding theory</strong>, and <strong>AI for neuroimaging</strong>, building systems that are useful, verifiable, and private by design.</p>
   <div class="hero__actions">
     <a class="pill" href="/publications/">View publications</a>
     <a class="pill pill--secondary" href="/cv/">Curriculum vitae</a>
@@ -42,7 +42,7 @@ redirect_from:
   </div>
 </div>
 
-I work with Prof. Jun Li at Queens College and with Prof. Guorong Wu's group on agentic workbenches for neuroimaging. I received my B.Eng. in Electronic Engineering from South China Agricultural University, Zhujiang College.
+At UNC-Chapel Hill I work in Prof. Guorong Wu's group on agentic workbenches for neuroimaging, and I continue to collaborate with Prof. Jun Li at Queens College on LLMs and coding theory. I received my M.S. in Computer Science from Queens College, City University of New York (2026), and my B.Eng. in Electronic Engineering from South China Agricultural University, Zhujiang College.
 
 ## News
 
