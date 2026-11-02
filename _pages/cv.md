@@ -20,7 +20,7 @@ Education
 Experience
 ======
 * **Research Assistant**, University of North Carolina at Chapel Hill — present
-  * Prof. Guorong Wu's group: LLM agents for privacy-preserving, cohort-scale neuroimaging analysis.
+  * ACM Lab ([acmlab.unc.edu](https://acmlab.unc.edu/))
 
 Research Interests
 ======
