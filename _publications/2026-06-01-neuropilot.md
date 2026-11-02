@@ -1,7 +1,7 @@
 ---
 title: "NeuroPilot: An Agent-Driven Smart Pipeline for Processing, Quality Control, and Managing Neuroimages"
 collection: publications
-category: workshops
+category: conferences
 permalink: /publication/2026-neuropilot
 excerpt: 'An agent-driven pipeline for neuroimage processing, quality control, and data management.'
 date: 2026-06-01

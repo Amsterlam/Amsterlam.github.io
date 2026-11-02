@@ -85,9 +85,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   conferences:
-    title: 'Conference Papers'
-  workshops:
-    title: 'Workshop Papers'
+    title: 'Conference & Workshop Papers'
   preprints:
     title: 'Preprints & Under Review'
 
