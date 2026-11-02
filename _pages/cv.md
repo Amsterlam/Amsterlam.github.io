@@ -40,12 +40,6 @@ Research Experience
   * Co-designed a multi-agent framework (Planner, Validator, Dispatcher, Reporter); with a locally hosted 7B model, raised held-out tool-use accuracy from 40.3% to 69.4%, using ~10.6% of the per-volume tokens of the NeuroClaw baseline.
 * **Text-Preserving Lossy Text Compression** — supervised by Jun Li
   * Token-deletion strategies (WordFreq, entropy-based, hybrid) with QLoRA-fine-tuned Llama-3.2-3B reconstruction, competitive with Gemini 2.0 Flash.
-* **Secure Gradient Coding for Distributed Training** — supervised by Jun Li
-  * Byzantine-resilient, straggler-tolerant training via Fractional Repetition Codes and a custom robust decoding algorithm.
-* **Image-based Predictive Modeling for Drug Evaluation** — supervised by Lihua Cai
-  * YOLOv8n-seg organoid segmentation (89% sensitivity) and LightGBM viability prediction (mean R² 0.633).
-* **AI Agent Literature Survey** — supervised by Lihua Cai
-  * Synthesized 200+ papers into a framework covering autonomy, human alignment, and multi-agent collaboration.
 
 See [Research & Projects](/portfolio/) for details.
 
