@@ -34,12 +34,6 @@ redirect_from:
     <p class="tile__body">Lossy text compression with LLM reconstruction, and when language models can help error-correcting codes for text.</p>
     <a class="chevron-link" href="/portfolio/02-lossy-text-compression/">Learn more</a>
   </div>
-  <div class="tile">
-    <span class="tile__icon icon--orange"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></span>
-    <h3 class="tile__title">Robust distributed learning</h3>
-    <p class="tile__body">Coding-theoretic defenses against Byzantine attackers and stragglers in distributed training.</p>
-    <a class="chevron-link" href="/portfolio/03-secure-gradient-coding/">Learn more</a>
-  </div>
 </div>
 
 ## Building CyberNeuro
