@@ -42,7 +42,17 @@ redirect_from:
   </div>
 </div>
 
-At UNC-Chapel Hill I build **CyberNeuro**, a privacy-preserving agentic workbench that lets LLM agents run cohort-scale neuroimaging and clinical data analysis while patient data stays on-premise. I co-designed its multi-agent framework (Planner, Validator, Dispatcher, Reporter), developed the execution layer that runs 58 neuroimaging and statistics tools such as FreeSurfer, fMRIPrep, and XCP-D as version-pinned containers on a Slurm cluster, and built the human-in-the-loop co-visualization panel for quality control. <a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>
+## Building CyberNeuro
+
+At UNC-Chapel Hill I build **CyberNeuro**, a web platform where researchers describe a neuroimaging study in plain language and an LLM agent plans, runs, and checks the analysis, while patient data stays on the lab's own infrastructure. Built on the open-source OpenCode agent engine, it brings together:
+
+- **Multi-user workspace**: a platform gateway and web app with per-user accounts, file browsing, and a live terminal over a persistent SSH connection.
+- **HPC execution**: agents submit and monitor Slurm jobs on UNC's Longleaf cluster over SSH/SFTP, with tools packaged as version-pinned containers.
+- **58 neuroimaging skills**: FreeSurfer, FSL, ANTs, MRtrix3, TractSeg, NiBabies, SPM-style pipelines, quality control, and statistics, each packaged as an agent skill.
+- **Interactive visualization**: a visualization runtime routes every result to the right viewer, from 3D cortical surfaces (PyVista) and diffusion glyphs (FURY) to voxel QC (FSLeyes) and manual mask editing (Freeview).
+- **One-image deployment**: the whole stack ships as a single Docker image with pinned toolchains and checksum-verified model weights, so other labs can run it too.
+
+<a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>&nbsp;&nbsp;&nbsp;<a class="chevron-link" href="/portfolio/01-cyberneuro/">Project details</a>
 
 ## News
 
