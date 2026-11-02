@@ -23,8 +23,3 @@ A researcher describes what they need in natural language → the agent selects 
 ## Case study: 5-step structural MRI QC
 
 From raw images through skull stripping, registration, and tissue segmentation to cortical surfaces, every step produces a review page. Researchers mark each subject as pass or fail, one by one, and can fix the brain mask by hand right in the browser. Once the decisions are exported, the agent goes on to repair or rerun the failed cases.
-
-## Research
-
-- Co-designed a multi-agent framework (Planner, Validator, Dispatcher, Reporter) where an LLM plans workflows over registered skills and validators gate every tool call, keeping patient data on-premise.
-- With a locally hosted 7B model, raised held-out tool-use accuracy from 40.3% to 69.4% over the base model, and completed a 10-cohort workflow suite with ~10.6% of the per-volume tokens of the NeuroClaw baseline.
