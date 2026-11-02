@@ -4,9 +4,11 @@ excerpt: "Research & engineering · UNC ACMLab, Guorong Wu's group<br/>An AI age
 collection: portfolio
 ---
 
-**Lab:** UNC ACMLab, Prof. Guorong Wu · **Related paper:** [CyberNeuro (arXiv:2607.28841)](/publication/2026-cyberneuro)
+**Lab:** UNC ACMLab, Prof. Guorong Wu · **Demo:** [CyberNeuro website](https://wanda-landing-page-orcin.vercel.app/) · **Related paper:** [CyberNeuro (arXiv:2607.28841)](/publication/2026-cyberneuro)
 
-Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. We built a platform that lets researchers run these analyses in natural language.
+Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. We built a platform that lets researchers run these analyses in natural language through its assistant, Wanda.
+
+<a class="pill" href="https://wanda-landing-page-orcin.vercel.app/">Watch the demo</a>
 
 ## How it works
 

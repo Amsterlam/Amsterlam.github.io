@@ -44,7 +44,7 @@ redirect_from:
 
 ## Building CyberNeuro
 
-Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. At UNC ACMLab I build **CyberNeuro**, an AI agent platform that lets researchers run these analyses in natural language.
+Neuroimaging analysis has a high barrier to entry: the toolchains are complex, the environments are hard to install, and researchers have to write cluster job scripts. At UNC ACMLab I build **CyberNeuro**, an AI agent platform that lets researchers run these analyses in natural language through its assistant, Wanda.
 
 <div class="steps">
   <div class="step">
@@ -74,7 +74,11 @@ Neuroimaging analysis has a high barrier to entry: the toolchains are complex, t
 - **Visualization routing**: the agent sends each output to the right tool by file type. NIfTI volumes open in a slice viewer, FreeSurfer surfaces in PyVista 3D, fiber tracts in FURY/TrackVis, and connectivity matrices as network graphs.
 - **Example: 5-step structural MRI QC**. From raw images through skull stripping, registration, and tissue segmentation to cortical surfaces, each step produces a review page. Researchers mark every subject pass or fail and can fix brain masks by hand in the browser; once the decisions are exported, the agent repairs or reruns the failed cases.
 
-<a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>&nbsp;&nbsp;&nbsp;<a class="chevron-link" href="/portfolio/01-cyberneuro/">Project details</a>
+<div class="hero__actions">
+  <a class="pill" href="https://wanda-landing-page-orcin.vercel.app/">Watch the demo</a>
+  <a class="chevron-link" href="https://arxiv.org/abs/2607.28841">Read the paper</a>
+  <a class="chevron-link" href="/portfolio/01-cyberneuro/">Project details</a>
+</div>
 
 ## News
 

@@ -31,8 +31,8 @@ Publications
 
 Research Experience
 ======
-* **CyberNeuro: AI Agent Platform for Neuroimaging Research (UNC ACMLab)** — supervised by Guorong Wu
-  * Built an AI agent platform that lets researchers run neuroimaging analyses in natural language, without installing complex toolchains or writing cluster job scripts.
+* **CyberNeuro: AI Agent Platform for Neuroimaging Research (UNC ACMLab)** — supervised by Guorong Wu · [Demo](https://wanda-landing-page-orcin.vercel.app/)
+  * Built an AI agent platform whose assistant, Wanda, lets researchers run neuroimaging analyses in natural language, without installing complex toolchains or writing cluster job scripts.
   * The agent maps each request to one of 58 Skills (an instruction document plus an Apptainer SIF image) covering structural preprocessing, DICOM-to-BIDS, structural MRI QC, white-matter normative scoring, DTI/tractography, functional connectivity, and statistics and paper figures, then generates and submits Slurm jobs to CPU/GPU nodes.
   * SolidJS web app with chat, file browser, and visualization panel; Skills appear as pills in the input box. Outputs are routed by file type: NIfTI to a slice viewer, FreeSurfer surfaces to PyVista 3D, fiber tracts to FURY/TrackVis, connectivity matrices to network graphs.
   * 5-step structural MRI QC workflow (raw image, skull stripping, registration, tissue segmentation, cortical surface) with per-subject pass/fail review pages and in-browser brain-mask editing; exported decisions drive the agent's repair or rerun.
